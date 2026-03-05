@@ -15,11 +15,4 @@ logging.basicConfig(
     filename=LOG_FILE_PATH,
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s')
-
-if __name__ == "__main__":
-    try:
-        1/0
-    except Exception as e:
-        logging.error(f"An error occurred: {str(e)}")
-        raise CustomException(e,sys)
     
